@@ -1,0 +1,21 @@
+package selfProgramming;
+
+class Exercise9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Write a Java method to print characters between two characters (i.e. A to P)
+		showCharacter('#', 'q', 12);
+	}
+	
+	public static void showCharacter(char character1, char character2, int y) {
+		for (int word = 1; character1 <= character2; word++, character1++) {
+			System.out.print(character1 + " ");
+			if (word % y == 0) {
+				System.out.println("");
+			}
+		}
+		System.out.print("\n");
+	}
+	
+}
