@@ -1,0 +1,29 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+class Exercise3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Write a Java method to display the middle character of a string
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Enter a string : ");
+        String character = input.nextLine();
+        System.out.print("Middle character in the string : " + middle(character));
+	}
+	
+	public static String middle(String character) {
+		int place, length;
+        if (character.length() % 2 == 0) {
+        	place = character.length() / 2 - 1;
+            length = 2;
+        } else {
+        	place = character.length() / 2;
+            length = 1;
+        }
+        return character.substring(place, place + length);
+	}
+
+}
