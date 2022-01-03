@@ -10,8 +10,8 @@ class Exercise6 {
 		Scanner input = new Scanner(System.in);
 		
 		System.out.print("Enter a number : ");
-        int num = input.nextInt();
-        System.out.print("Sum is : " + sum(num));
+        	int num = input.nextInt();
+        	System.out.print("Sum is : " + sum(num));
 	}
 	
 	public static int sum(long y) {
