@@ -1,0 +1,22 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+class AgeGroup {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		readAge();
+	}
+	
+	public static int readAge() {
+		Scanner read = new Scanner(System.in);
+		int age = 0;
+		do {
+			System.out.print("Please enter your age (1-100) : ");
+			age = read.nextInt();;
+		} while ((age < 1) || (age > 100));  // Valid age check
+	    return age;  // Return the number to main
+	} 
+
+}
