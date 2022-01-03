@@ -1,0 +1,25 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+class Exercise10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Write a Java method to check whether an year (integer) entered by the user is a leap year or not
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Enter year : ");
+        int year = input.nextInt();
+        System.out.print("Is it a leap year? T/F : " + leapYear(year));
+	}
+	
+	public static boolean leapYear(int a) {
+		boolean x = (a % 4) == 0;
+		boolean y = (a % 100) != 0;
+		boolean z = ((a % 100 == 0) && ( a % 400 == 0));
+	
+		return x && (y || z);
+	}
+
+}
