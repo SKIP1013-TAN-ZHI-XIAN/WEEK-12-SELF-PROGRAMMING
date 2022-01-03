@@ -25,8 +25,8 @@ class Hello2 {
 	}  
 	
 	/* public static void showMessage() {  
-			String name = "Ali";
-			System.out.println("Hello, " + name);
+		String name = "Ali";
+		System.out.println("Hello, " + name);
 	} */
 	
 	public static void showMessage(int a, int b) {  
