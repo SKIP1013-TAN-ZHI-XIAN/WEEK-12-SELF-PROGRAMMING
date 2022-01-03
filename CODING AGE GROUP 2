@@ -23,7 +23,7 @@ class AgeGroup2 {
 			System.out.print("Please enter your age (1 - 100) : ");
 			age = read.nextInt();;
 		} while ((age < 1) || (age > 100));  // Valid age check
-	    return age;  // Return the number to main
+	    	return age;  // Return the number to main
 	} 
 	
 	public static int readAge(int max) {
@@ -33,7 +33,7 @@ class AgeGroup2 {
 			System.out.print("Please enter your age (1 - " + max + ") : ");
 			age = read.nextInt();;
 		} while ((age < 1) || (age > max));  // Valid age check
-	    return age;  // Return the number to main
+	    	return age;  // Return the number to main
 	}
 
 }
