@@ -1,0 +1,42 @@
+package selfProgramming;
+
+class Hello2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a = 30;
+		int b = 2;
+		
+		System.out.println("I have a message for you.");
+		showMessage();
+		System.out.println("That's all folks!");
+		showMessage("Ali");
+		Hello2.showMessage();
+		System.out.println("Calculation is " + Math.pow(2, 5));
+		showMessage("Ali", 3);
+	}
+	
+	public static void showMessage() {  // Method header and { is the start of method body
+		System.out.println("Hello World.");
+	}  // End of method body
+	
+	public static void showMessage(String name) {  
+		System.out.println("Hello, " + name);
+	}  
+	
+	/* public static void showMessage() {  
+			String name = "Ali";
+			System.out.println("Hello, " + name);
+	} */
+	
+	public static void showMessage(int a, int b) {  
+		System.out.println(Math.pow(a,b));
+	} 
+	
+	public static void showMessage(String name, int num) {
+		for (int i = 0; i < num; i++) {
+			System.out.println("Hello, " + name);
+		}
+	}
+	
+}
