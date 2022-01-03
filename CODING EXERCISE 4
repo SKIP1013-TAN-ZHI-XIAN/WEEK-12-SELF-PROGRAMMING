@@ -1,0 +1,27 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+class Exercise4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Write a Java method to count all vowels in a string
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Enter a word : ");
+        String character = input.nextLine();
+        System.out.print("Vowels available in the word : " + vowels(character));
+	}
+	
+	public static int vowels(String character) {
+		int count = 0;
+		for (int i = 0; i < character.length(); i++) {
+            if ((character.charAt(i) == 'a') || (character.charAt(i) == 'e') || (character.charAt(i) == 'i') || (character.charAt(i) == 'o') || (character.charAt(i) == 'u')) {
+                count++;
+            }
+        }
+        return count;
+	}
+
+}
