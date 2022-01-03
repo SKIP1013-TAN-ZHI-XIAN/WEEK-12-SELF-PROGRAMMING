@@ -10,8 +10,8 @@ class Exercise10 {
 		Scanner input = new Scanner(System.in);
 		
 		System.out.print("Enter year : ");
-        int year = input.nextInt();
-        System.out.print("Is it a leap year? T/F : " + leapYear(year));
+        	int year = input.nextInt();
+        	System.out.print("Is it a leap year? T/F : " + leapYear(year));
 	}
 	
 	public static boolean leapYear(int a) {
