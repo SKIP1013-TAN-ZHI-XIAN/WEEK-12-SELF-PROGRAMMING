@@ -1,0 +1,28 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+class SearchValue {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		
+		int[] num = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+		System.out.print("Enter value : ");
+		int searchValue = input.nextInt();
+		search(num, searchValue);
+	}
+	
+	public static int search (int[] num, int searchValue) {
+		int location = 0;
+	    for (int i = 0; i < num.length; i++) {
+	    	if (num[i] == searchValue) {
+	    		location = i;
+	    		System.out.println("Location is : " + location);
+	    	}
+	    }
+	    return location;
+	} 
+
+}
