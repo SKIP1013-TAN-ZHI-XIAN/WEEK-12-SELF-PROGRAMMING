@@ -10,18 +10,18 @@ class Exercise4 {
 		Scanner input = new Scanner(System.in);
 		
 		System.out.print("Enter a word : ");
-        String character = input.nextLine();
-        System.out.print("Vowels available in the word : " + vowels(character));
+        	String character = input.nextLine();
+        	System.out.print("Vowels available in the word : " + vowels(character));
 	}
 	
 	public static int vowels(String character) {
 		int count = 0;
 		for (int i = 0; i < character.length(); i++) {
-            if ((character.charAt(i) == 'a') || (character.charAt(i) == 'e') || (character.charAt(i) == 'i') || (character.charAt(i) == 'o') || (character.charAt(i) == 'u')) {
-                count++;
-            }
-        }
-        return count;
+            		if ((character.charAt(i) == 'a') || (character.charAt(i) == 'e') || (character.charAt(i) == 'i') || (character.charAt(i) == 'o') || (character.charAt(i) == 'u')) {
+                	count++;
+            		}
+        	}
+        	return count;
 	}
 
 }
