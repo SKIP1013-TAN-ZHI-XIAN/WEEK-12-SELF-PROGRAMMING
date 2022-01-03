@@ -10,8 +10,8 @@ class Exercise12 {
 		Scanner input = new Scanner(System.in);
 		
 		System.out.print("Enter an integer : ");
-        int num = input.nextInt();
-        showMatrix(num);
+        	int num = input.nextInt();
+        	showMatrix(num);
 	}
 	
 	public static void showMatrix(int num) {
