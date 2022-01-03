@@ -9,14 +9,14 @@ class Exercise13 {
 		// Write Java methods to calculate the area of a triangle
 		Scanner input = new Scanner(System.in);
 		
-        System.out.print("Enter Side1 : ");
-        double side1 = input.nextDouble();
-        System.out.print("Enter Side2 : ");
-        double side2 = input.nextDouble();
-        System.out.print("Enter Side3 : ");
-        double side3 = input.nextDouble();
-        System.out.println(valid(side1, side2,side3) ?
-               "The area of the triangle is " + triangleArea(side1, side2, side3) : "Invalid triangle" );
+        	System.out.print("Enter Side1 : ");
+        	double side1 = input.nextDouble();
+        	System.out.print("Enter Side2 : ");
+        	double side2 = input.nextDouble();
+        	System.out.print("Enter Side3 : ");
+        	double side3 = input.nextDouble();
+        	System.out.println(valid(side1, side2,side3) ?
+               		"The area of the triangle is " + triangleArea(side1, side2, side3) : "Invalid triangle" );
 	}
 
 	public static boolean valid(double side1, double side2, double side3) {
