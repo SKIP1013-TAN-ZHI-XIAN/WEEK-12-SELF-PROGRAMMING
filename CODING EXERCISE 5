@@ -1,0 +1,30 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+class Exercise5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Write a Java method to count all words in a string
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Enter a sentence : ");
+        String sentence = input.nextLine();
+        System.out.print("Words available in the sentence : " + word(sentence));
+	}
+	
+	public static int word(String sentence) {
+		int count = 0;
+		if (!(" ".equals(sentence.substring(0,1))) || !(" ".equals(sentence.substring(sentence.length() - 1)))) {
+			for (int i = 0; i < sentence.length(); i++) {
+				if (sentence.charAt(i) == ' ') {
+					count++;
+				}
+			}
+			count = count + 1;
+		}
+		return count; // Returns 0 if string starts or ends with space " "
+	}
+
+}
