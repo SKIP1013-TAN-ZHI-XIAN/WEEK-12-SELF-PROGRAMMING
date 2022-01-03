@@ -7,18 +7,18 @@ class Exercise14 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		// Write a Java method to create the area of a pentagon
-        Scanner input = new Scanner(System.in);
+        	Scanner input = new Scanner(System.in);
         
-        System.out.print("Enter the number of sides for the shape : ");
-        int num = input.nextInt();
-        System.out.print("Enter the side for the shape : ");
-        double side = input.nextDouble();
+        	System.out.print("Enter the number of sides for the shape : ");
+        	int num = input.nextInt();
+        	System.out.print("Enter the side for the shape : ");
+        	double side = input.nextDouble();
 
-        System.out.printf("The area of the pentagon is = %.2f ", shapeArea(num, side));
-    }
+        	System.out.printf("The area of the pentagon is = %.2f ", shapeArea(num, side));
+    	}
 
-    public static double shapeArea(int a, double b) {
-        return  (a * b * b) / (4 * Math.tan(Math.PI/a));
+    	public static double shapeArea(int a, double b) {
+        	return  (a * b * b) / (4 * Math.tan(Math.PI/a));
 	}
 
 }
