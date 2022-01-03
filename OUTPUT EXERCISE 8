@@ -1,0 +1,13 @@
+Enter the investment value : 2500
+Enter the interest rate : 6
+Enter year : 8
+Years    FutureValue
+----------------------
+1            2525.11
+2            2550.48
+3            2576.10
+4            2601.98
+5            2628.12
+6            2654.53
+7            2681.19
+8            2708.13
