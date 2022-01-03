@@ -1,0 +1,29 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+class Exercise16 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Write a Java method to find all twin prime numbers less than 100
+		for (int i = 2; i < 100; i++) {
+            if (primeNumber(i) && primeNumber(i + 2)) {
+                System.out.printf("(%d, %d)\n", i, i + 2);
+            }
+        }
+    }
+
+    public static boolean primeNumber(long a) {
+        if (a < 2) {
+        	return false;
+        }
+        for (int i = 2; i <= a / 2; i++) {
+            if (a % i == 0) {
+            	return false;
+            }
+        }
+        return true;
+	}
+
+}
