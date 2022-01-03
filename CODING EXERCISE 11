@@ -1,0 +1,59 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+class Exercise11 {
+	
+	public static final int PASSWORD_LENGTH = 8;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Write a Java method to check whether a string is a valid password
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Requirement 1 : ");
+		System.out.println("A password must have at least eight characters.");
+		System.out.println("Requirement 2 : ");
+		System.out.println("A password consists of only letters and digits.");
+		System.out.println("Requirement 3 : ");
+		System.out.println("A password must contain at least two digits.");
+		System.out.println("You are agreeing to the above Terms and Conditions.");
+		System.out.print("Please enter your password : ");
+		String password = input.nextLine();
+		
+		if (correct(password)) {
+			System.out.println("Successful! Valid password : " + password);
+		} else {
+			System.out.println("Unsuccessful! Invalid password : " + password);
+		}
+	}
+	
+    public static boolean correct(String password) {
+        if (password.length() < PASSWORD_LENGTH) {
+        	return false;
+        }
+        int character = 0;
+        int number = 0;
+        for (int i = 0; i < password.length(); i++) {
+            char ch = password.charAt(i);
+            if (numeric(ch)) {
+            	number++;
+            } else if (letter(ch)) {
+            	character++;
+            } else {
+            	return false;
+            }
+        }
+        return ((character >= 2) && (number >= 2));
+    }
+
+    public static boolean letter(char ch) {
+        ch = Character.toUpperCase(ch);
+        return (ch >= 'A' && ch <= 'Z');
+    }
+
+    public static boolean numeric(char ch) {
+        return (ch >= '0' && ch <= '9');
+    }
+
+}
