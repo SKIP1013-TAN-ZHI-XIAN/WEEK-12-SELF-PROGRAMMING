@@ -1,0 +1,26 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+class Exercise12 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Write a Java method (takes a number n as input) to displays an n-by-n matrix
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Enter an integer : ");
+        int num = input.nextInt();
+        showMatrix(num);
+	}
+	
+	public static void showMatrix(int num) {
+		for (int i = 0; i < num; i++) {
+			for(int k = 0; k < num; k++) {
+				System.out.print((int)(Math.random() * 2) + " ");
+			}
+		System.out.println();
+		}
+	}
+
+}
