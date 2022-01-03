@@ -13,7 +13,7 @@ class PassingParameter2 {
 		
 		// Call indexLargestRelment and return the index value to largest element in the array
 		indLargest = indexLargestElement(listA);
-		System.out.println("\nThe largest element is : " + listA[indLargest]);
+		System.out.println("The largest element is : " + listA[indLargest]);
 	}
 
 	public static int sumArray(int[] list) {
