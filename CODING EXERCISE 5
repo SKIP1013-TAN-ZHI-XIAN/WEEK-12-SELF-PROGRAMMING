@@ -10,8 +10,8 @@ class Exercise5 {
 		Scanner input = new Scanner(System.in);
 		
 		System.out.print("Enter a sentence : ");
-        String sentence = input.nextLine();
-        System.out.print("Words available in the sentence : " + word(sentence));
+        	String sentence = input.nextLine();
+        	System.out.print("Words available in the sentence : " + word(sentence));
 	}
 	
 	public static int word(String sentence) {
