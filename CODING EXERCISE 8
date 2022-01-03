@@ -1,0 +1,37 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+class Exercise8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Write a Java method to compute the future investment value at a given interest rate for a specified number of years
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Enter the investment value : ");
+        double inv = input.nextDouble();
+        System.out.print("Enter the interest rate : ");
+        double rate = input.nextDouble();
+        System.out.print("Enter year : ");
+        int year = input.nextInt();
+        
+        rate = 0.01;
+        
+        System.out.println("Years    FutureValue");
+        System.out.println("----------------------");
+        for (int i = 1; i <= year; i++) {
+        	int num = 19;
+    	    if (i >= 10) {
+    	    	num = 18;
+
+    	    }
+			System.out.printf(i + "%" + num + ".2f\n", futureInvestment(inv, rate / 12, i));
+    	}
+	}
+        
+    public static double futureInvestment(double investment, double monthlyInterestRate, int year) {       
+    		return investment * Math.pow(1 + monthlyInterestRate, year * 12);
+	}
+
+}
